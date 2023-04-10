@@ -11,6 +11,29 @@
     <title>Klinik Otomation</title>
 </head>
 <body>
+    <div class="konto_content">
+        <div class="label">
+            <label>Vorname</label>
+            <input type="text">
+        </div><br>
+        <div class="label">
+            <label>Nachname</label>
+            <input type="text">
+        </div><br>
+        <div class="label">
+            <label>Identifikation No </label>
+            <input type="text">
+        </div><br>
+        <div class="label">
+            <label>Telefon</label>
+            <input type="text">
+        </div><br>
+        <div class="label">
+            <label>E-Mail</label>
+            <input type="text">
+        </div><br>
+        <button type="submit"> Update</button>
+    </div>
     
 </body>
 </html>
