@@ -182,3 +182,20 @@ a {
     font-size: 28px;
 
 }
+
+select,
+#termin_div input,
+button{
+    position: relative;
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+    background: #292830;
+    color: white;
+    cursor: pointer;
+} 
+#termin_div form {
+    position: relative;
+    top: 50px;
+
+}
