@@ -15,17 +15,17 @@
     </header>
     <div class="tableOuter">
         <h1>Login</h1>
-        <form action="islen.php" method="post">
+        <form action="verarbeitung.php" method="post">
             <div class="user">
                 <input type="text" name="IdenNR" placeholder="Identifikation Number">
             </div>
             <div class="pass">
                 <input type="password" name="password" placeholder="Password">
             </div>
-            <button type="submit"  class= "sub">Login</button>
+            <button type="submit"  class= "sub" id="login">Login</button>
             <br>
         </form>
-        <a href="mitglied.php"><button type="submit" class= "sub">Register</button></a>
+        <a href="mitglied.php"><button type="submit" class="sub" id="mitglied">Register</button></a>
     </div>
     
 </body>

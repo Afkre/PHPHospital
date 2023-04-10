@@ -25,3 +25,115 @@ header h2{
     font-size: 30px;
     font-weight: bold;
 }
+.tableOuter{
+    width: 750px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 60%;
+    margin: 10px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+}
+
+::placeholder{
+    font-size: 25px;
+    text-align: center;
+}
+
+.sub {
+    height: 40px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color:white;
+    font-weight:bolder;
+    cursor: pointer; 
+    margin: 15px;
+}
+
+#login {
+    background-color: #10ac84;
+}
+
+#mitglied {
+    background-color: #ee5253;
+}
+
+#login:hover{
+    background: #1dd1a1;
+}
+
+#mitglied:hover{
+    background: #ff6b6b;
+}
+
+a{
+    font-size: 18px;
+    color: (100,100,100);
+}
+
+.oben_bar{
+    position: relative;
+    width: 85%;
+    height: 100px;
+    left: 0;
+    background: #292830;
+    top: 0;
+}
+
+.oben_bar h1 {
+    position: absolute;
+    left: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+.menu h5 {
+    position: relative;
+    display: inline;
+    padding: 50px;
+    line-height: 100px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    background: #292830;
+    right: 0;
+
+}
+a {
+    text-decoration: none;
+}
+.logout{
+    position:absolute;
+    width: 15%;
+    height: 100px;
+    background: #292830;
+    right: 0;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25;
+    cursor: pointer;
+    top: 0;
+}
+.logout:hover{
+    background: red;
+}
