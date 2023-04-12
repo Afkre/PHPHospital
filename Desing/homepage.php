@@ -988,7 +988,7 @@
                 <option value="Hals-Nase-Ohren">Hals-Nase-Ohren</option>
             </select>
             <select name="arzt" class="arzt" id="">
-                <option value="arzt">Bitte wählen Sie einen Arzt/ eine Arztin aus</option>
+                <option value="arzt">Bitte wählen Sie einen Arzt/ eine Arztin aus.</option>
                 <option value="Hans Müller">Hans Müller</option>
                 <option value="OrthoJoachim Steinpädie">Joachim Stein</option>
                 <option value="Adam Braun">Adam Braun</option>
