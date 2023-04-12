@@ -1,5 +1,19 @@
 <?php
 
+ob_start();
+session_start();
+include 'connect.php';
+
+$userfragen=$db->prepare("SELECT * FROM user WHERE user_idenNR=:user_idenNR");
+$userfragen->execute([
+    'user_idenNR' =>$_SESSION['user_idenNR']
+]);
+$anzahl=$userfragen->rowCount();
+$userkontroll=$userfragen->fetch(PDO::FETCH_ASSOC);
+
+if ($anzahl==0) {
+    header("location:index.php?situation=unerlaubte");
+}
 
 
 ?>

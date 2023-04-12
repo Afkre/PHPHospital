@@ -17,15 +17,15 @@
         <h1>Register</h1>
         <form action="verarbeitung.php" method="post">
         <div class="user">
-                <input type="text" name="name" placeholder="Vorname Nachname">
+                <input type="text" name="user_name" placeholder="Vorname Nachname">
             </div>
             <div class="user">
-                <input type="text" name="IdenNR" placeholder="Identifikation Number">
+                <input type="text" name="user_idenNR" placeholder="Identifikation Number">
             </div>
             <div class="pass">
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="user_password" placeholder="Password">
             </div>
-            <button type="submit"  class= "sub" id="login">Register</button>
+            <button type="submit"  class= "sub" id="login" name="user_register">Register</button>
             <br>
         </form>
         <a href="index.php"><button type="submit" class="sub" id="mitglied">Zurück</button></a>
