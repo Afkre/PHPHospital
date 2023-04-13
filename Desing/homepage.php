@@ -15,9 +15,9 @@
     </div>
     <div class="mitte_div" id="termin_div">
         <form action="verarbeitung.php" method="post"> 
-            <input type="date">
+            <input type="date" name="termin_date">
             <!-- Baden-Württemberg-->
-            <select id="city" name="city"><!-- https://www.html-code-generator.com/html/drop-down/city-names -->
+            <select id="termin_ort" name="termin_ort"><!-- https://www.html-code-generator.com/html/drop-down/city-names -->
                 <option value="">Select City</option>
                 <option value="Aach">Aach</option>
                 <option value="Aalen">Aalen</option>
@@ -964,7 +964,7 @@
                 <option value="Zweiflingen">Zweiflingen</option>
                 <option value="Zwiefalten">Zwiefalten</option>
             </select>
-            <select name="klinik" class="klinik" id="">
+            <select name="termin_klinik" class="termin_klinik" id="">
                 <option value="klinik">Bitte wählen Sie eine Klinik </option>
                 <option value="Stuttgart Klinikum">Stuttgart Klinikum</option>
                 <option value="Ludwigsburg Klinikum">Ludwigsburg Klinikum</option>
@@ -972,7 +972,7 @@
                 <option value="Böblingen Klinikum">Böblingen Klinikum</option>
                 <option value="Pforzheim Klinikum">Pforzheim Klinikum</option>
             </select>
-            <select name="abteilung" class="abteilung" id="">
+            <select name="termin_abteilung" class="termin_abteilung" id="">
                 <option value="abteilung">Bitte wählen Sie eine Abteilung </option>
                 <option value="Onkologie">Onkologie</option>
                 <option value="Orthopädie">Orthopädie</option>
@@ -987,7 +987,7 @@
                 <option value="Endokrinologie">Endokrinologie</option>
                 <option value="Hals-Nase-Ohren">Hals-Nase-Ohren</option>
             </select>
-            <select name="arzt" class="arzt" id="">
+            <select name="termin_arzt" class="termin_arzt" id="">
                 <option value="arzt">Bitte wählen Sie einen Arzt/ eine Arztin aus.</option>
                 <option value="Hans Müller">Hans Müller</option>
                 <option value="OrthoJoachim Steinpädie">Joachim Stein</option>

@@ -49,11 +49,11 @@ if (isset($_POST['login'])) {
 }
 
 if (isset($_POST['termin_speichern'])) {
-    $termin_ort= isset($_POST['termin_ort'])? $_POST['city']: null;
-    $termin_klinik= isset($_POST['termin_klinik'])? $_POST['klinik']: null;
-    $termin_arzt= isset($_POST['termin_arzt'])? $_POST['arzt']: null;
-    $termin_date= isset($_POST['termin_date'])? $_POST['date']: null;
-    $termin_abteilung= isset($_POST['termin_abteilung'])? $_POST['abteilung']: null;
+    $termin_ort= isset($_POST['termin_ort'])? $_POST['termin_ort']: null;
+    $termin_klinik= isset($_POST['termin_klinik'])? $_POST['termin_klinik']: null;
+    $termin_arzt= isset($_POST['termin_arzt'])? $_POST['termin_arzt']: null;
+    $termin_date= isset($_POST['termin_date'])? $_POST['termin_date']: null;
+    $termin_abteilung= isset($_POST['termin_abteilung'])? $_POST['termin_abteilung']: null;
     $user_id= isset($_POST['user_id'])? $_POST['user_id']: null;
 
     $register=$db->prepare("INSERT INTO termin SET

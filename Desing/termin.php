@@ -18,13 +18,25 @@
             <th>Date</th>
 
         </tr>
+        <?php
+        $terminfragen=$db->prepare("SELECT * FROM termin
+        INNER JOIN user ON termin.user_id= user.user_id WHERE user_idenNR=:user_idenNR");
+        $terminfragen->execute([
+            'user_idenNR' =>$_SESSION['user_idenNR']
+        ]); 
+        while ($terminkontroll=$terminfragen->fetch(PDO::FETCH_ASSOC)) {?>
+            
+        
+        
+        
         <tr>
-            <td>Hans Müller</td>
-            <td>Joachim Stein</td>
-            <td>Adam Braun</td>
-            <td>Paula Messi</td>
-            <td>Jasmin Bach</td>
+            <td><?php echo $terminkontroll['termin_klinik'] ?></td>
+            <td><?php echo $terminkontroll['termin_abteilung'] ?></td>
+            <td><?php echo $terminkontroll['termin_arzt'] ?></td>
+            <td><?php echo $terminkontroll['termin_ort'] ?></td>
+            <td><?php echo $terminkontroll['termin_date'] ?></td>
         </tr>
+        <?php } ?>
     </table>
 
     
