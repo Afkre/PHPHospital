@@ -13,18 +13,20 @@
 <body>
     <div class="konto_content">
         <div class="label">
-            <label>Vorname</label>
-            <input type="text">
+            <label>Vorname Nachname</label>
+            <input type="text" placeholder=<?php echo $userkontroll['user_name']?>>
         </div><br>
+        <!--
         <div class="label">
             <label>Nachname</label>
             <input type="text">
-        </div><br>
+        </div><br>-->
         <div class="label">
             <label>Identifikation No </label>
-            <input type="text">
+            <input type="text" placeholder=<?php echo $userkontroll['user_idenNR']?>>
         </div><br>
-        <div class="label">
+        <!--
+            <div class="label">
             <label>Telefon</label>
             <input type="text">
         </div><br>
@@ -33,6 +35,7 @@
             <input type="text">
         </div><br>
         <button type="submit"> Update</button>
+        -->
     </div>
     
 </body>

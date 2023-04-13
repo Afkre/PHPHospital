@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="vor_nach_name">
-        <h4>Hallo, Vorname Nachname</h4>
+        <h4>Hallo, <?php echo $userkontroll['user_name']?> </h4>
     </div>
     <div class="mitte_div" id="termin_div">
         <form action="verarbeitung.php" method="post"> 
@@ -999,6 +999,7 @@
                 <option value="Caro Schmith">Caro Schmith</option>
                 <option value="Heinrich Zimmermann">Heinrich Zimmermann</option>
             </select>
+            <input type="hidden" name="user_id" value="<?php echo $userkontroll['user_id']  ?>">
             <button name="termin_speichern">Termin speichern</button>
         </form>
     </div>

@@ -37,8 +37,8 @@ if ($anzahl==0) {
         </div>
 
     </div>
-    <div class="logout">
+    <a href="logout.php"><div class="logout">
         Logout
-    </div>
+    </div></a>
 </body>
 </html>
