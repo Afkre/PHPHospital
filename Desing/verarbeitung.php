@@ -54,7 +54,7 @@ if (isset($_POST['termin_speichern'])) {
     $termin_arzt= isset($_POST['termin_arzt'])? $_POST['arzt']: null;
     $termin_date= isset($_POST['termin_date'])? $_POST['date']: null;
     $termin_abteilung= isset($_POST['termin_abteilung'])? $_POST['abteilung']: null;
-    $patient_id= isset($_POST['user_id'])? $_POST['user_id']: null;
+    $user_id= isset($_POST['user_id'])? $_POST['user_id']: null;
 
     $register=$db->prepare("INSERT INTO termin SET
         termin_ort=?,
@@ -62,11 +62,11 @@ if (isset($_POST['termin_speichern'])) {
         termin_arzt=?,
         termin_date=?,
         termin_abteilung=?,
-        termin_patient_id=?
+        user_id=?
 
     ");
     $insert = $register->execute([
-        $termin_ort, $termin_klinik,$termin_arzt, $termin_date, $termin_abteilung, $patient_id
+        $termin_ort, $termin_klinik, $termin_arzt, $termin_date, $termin_abteilung, $user_id
     ]);
     
     if($insert){
