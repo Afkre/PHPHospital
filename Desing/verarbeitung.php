@@ -5,7 +5,6 @@ session_start();
 include 'connect.php';
 
 
-
 if(isset($_POST['user_register'])){
    // echo 'erfolgreich';
    $user_idenNR = isset($_POST['user_idenNR'])? $_POST['user_idenNR']: null;
